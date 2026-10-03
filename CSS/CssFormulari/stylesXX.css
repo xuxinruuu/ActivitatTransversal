@@ -1,0 +1,47 @@
+
+h1{text-align:center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 33px;
+      color:rgb(37, 103, 103);
+    }
+
+p{text-align:center;
+    font-size:20px}
+
+fieldset{
+    background-color: rgb(204, 229, 229);
+        width: 500px;
+        font-size: 20px;
+        margin: 0 auto;
+}
+legend{font-weight:bold;
+    text-align:center;
+}
+
+label{text-align:center;
+    font-weight: 200,bold;
+      font-size:15px;
+        font-family:Verdana;}
+
+.data{display:flex;
+      gap:10px;}
+
+.data input{width:80px;
+            text-align: center}
+
+::placeholder{
+             border:none;
+             color:rgb(64, 62, 62);
+             font-style: italic}
+
+.boto{display:flex; 
+    justify-content: center}   
+
+.Enviar{border-radius:100px;
+    padding:10px;
+    background-color:rgb(127, 171, 171);
+        border:none;
+        block-size: 60px;
+        inline-size: 600px;
+        font-size:15px;}
+    

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Formulari base</title>
+  <link rel="stylesheet" href="/Css/cssFormulari.css" />
+  <style>
+    .titol{
+        width:300px; 
+        padding: 20px; 
+        font-size: 18px;
+        border-radius: 100px;
+        border: 0px;   
+}
+
+.nom_correu_numtel {
+        display:block;
+        margin:auto;
+        width:300px; 
+        padding: 20px; 
+        font-size: 18px;
+        border-radius: 100px;
+        border: 0px;  
+} 
+
+.genere {
+        color:white;
+        font-size:18px;
+}
+
+.data{
+        padding: 20px; 
+        font-size: 18px;
+        border-radius: 100px;
+        border: 0px;  
+}
+
+.check{
+        color:white;
+        font-size:18px;
+}
+
+.radi{
+        color:white;
+        font-size:18px;
+        padding-bottom: 20px;
+}
+
+h1{
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 900;
+}
+
+fieldset{
+        width: 600px;
+        padding:50px;
+        border-radius: 15px;
+        border: 0px;
+        background: linear-gradient(to bottom, #02264a, #1567b8);
+}
+
+button{
+        display:block;
+        margin:auto;
+        width:340px; 
+        padding: 20px;
+        font-size: 18px;
+        color:black;
+        background-color: rgb(236, 162, 190);
+        border-radius: 100px;
+        border: 0px solid;
+        }
+   
+button:hover{
+        background-color: brown;
+        color: white;
+}
+p {
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 600;
+}
+.up{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+}
+  </style>
+</head>
+
+<body>
+    <header>
+      <a href="../../index.html" ><img style="width:50px; text-align: center;" src="../../IMG/Formulari/back.png"></a>
+    </header>
+
+    <main>
+      <form action="enviat.html" method="post">
+        <div class="up" style="text-align: center; font-family: sans-serif">
+          <fieldset>
+            <h1>Formulari de contacte</h1>
+                  <input class="nom_correu_numtel" id="texte" style="display:block; margin:auto;" name="texte" type="text" placeholder="Nom i cognoms" required><br>
+                  <input class="nom_correu_numtel" id="correu" style="display:block; margin:auto;" name="correu" type="email" placeholder="Correu electrònic" required><br>
+                  <input class="nom_correu_numtel" id="numtel" style="display:block; margin:auto;" name="telefon" type="tel" placeholder="123 456 789" required><br>
+              <h4 style="color: white; font-size: 25px;">Preferencies</h4>
+                  <div>
+                    <label class="check" type="checkbox" for="chk-noticies">
+                      <input type="checkbox" id="chk-noticies" name="preferencies[]" value="noticies" checked>
+                      Rebre notícies 
+                    </label>
+                    <label class="check" type="checkbox" for="chk-ofertes">
+                      <input type="checkbox" id="chk-ofertes" name="preferencies[]" value="ofertes">
+                      Ofertes i promocions 
+                    </label>
+                    <label class="check" type="checkbox" for="chk-actualitzacions">
+                      <input type="checkbox" id="chk-actualitzacions" name="preferencies[]" value="actualitzacions">
+                      Actualitzacions del producte
+                    </label>
+                  </div><br>
+            <p>Frecuencia de Actualitzaciones</p>
+            <label class="radi" type="radio" for="radio-diari"> 
+              <input type="radio" id="radio-diari" name="frequencia" value="diari" checked>
+              Diario
+            </label>
+            <label class="radi" type="radio" for="radio-setmanal">
+              <input type="radio" id="radio-setmanal" name="frequencia" value="setmanal">
+              Semanal
+            </label>
+            <label class="radi" type="radio" for="radio-mensual">
+              <input type="radio" id="radio-mensual" name="frequencia" value="mensual">
+              Mensual
+            </label>
+            <div>
+                    <label type="textarea" for="comentaris">
+                    <textarea style="width:350px; height: 50px; font-size:18px; border-radius: 12px;" id="comentaris" name="comentaris" rows="4" placeholder="COMENTARI O PREGUNTA..."></textarea>
+                    </label>
+                  </div><br>
+              <div>
+                <button class="Enviar" type="submit">ENVIAR</button><br>
+              </div>
+          </fieldset>
+        </div>
+      </form>
+    </main>
+</body>
+</html>

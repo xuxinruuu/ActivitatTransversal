@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Formulari base</title>
+    <link rel="stylesheet" href="/cssFormulari/estil.css" />
+    
+    <style>
+
+      h1{
+        display: block;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #1567b8;
+      }
+
+      #p1 {
+        display: block;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #1567b8;
+      }
+
+      body {
+        margin: 40px;
+        padding-top: 60px; 
+        font-family: Arial, sans-serif;
+        display: flex;
+      }
+
+      fieldset{
+        display: block;
+        width: 600px;
+        padding:50px;
+        border-radius: 15px;
+        border: 0px;
+        background-color:#02264a;
+      }
+
+      input{
+        display:block;
+        margin:auto;
+        width:300px; 
+        padding: 20px; 
+        font-size: 18px;
+        border-radius: 100px;
+        border: 0px;
+      }
+
+      label{
+        display: block  ;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 600;
+      }
+      </style>
+</head>
+<body>
+
+    <main>
+        <form class="up" action="que_penses_enviat_Yaseen.html" method="post">
+        <fieldset>
+        <header>
+        <h1>Formulari de contacto</h1>
+        </header>
+        <p id="p1">Rellena los campos a continuación con tu información. Nos pondremos en contacto contigo lo antes posible.</p>
+        <label for="nom">Nombre completo
+          <br>
+              <input class="titol" name="nom" type="text" placeholder="Escribe tu nombre" required>
+          </label>
+          <br>
+          <label for="correu">Correo electronico</label>
+          <br>
+              <input class="titol" name="correu" type="email" placeholder="nombre@ejemplo.com" required>
+          <br>
+            <label type="tel" for="telefon">Telefono</label>
+          <br>
+              <input class="titol" name="telefon" type="tel" placeholder="123 456 789" required>
+          <br>
+            <label type="text">Razon de contacto
+          <br>
+                <input id="entrada_desplegable" name="entrada_desplegable" list="llista-entrades" placeholder="Escoje o escribe..." type="text">
+                  <datalist id="llista-entrades">
+                    <option value="Opció 1">Ajuda o asistencia</option>
+                    <option value="Opció 2">Fer alguna consulta</option>
+                    <option value="Opció 2">Feedback</option>
+                  </datalist>
+            </label>
+          <br>
+          <br>
+            <fieldset>
+            <legend>Preferencias</legend>
+            <p class="titol">Preferencias de Notificaciones</p>
+            <label type="checkbox" for="chk-noticies">
+              <input type="checkbox" id="chk-noticies" name="preferencies[]" value="noticies" checked>
+              Recibir notícias
+            </label>
+            <br>
+            <label type="checkbox" for="chk-ofertes">
+              <input type="checkbox" id="chk-ofertes" name="preferencies[]" value="ofertes">
+              Ofertas i promociones
+            </label>
+            <br>
+            <label type="checkbox" for="chk-actualitzacions">
+              <input type="checkbox" id="chk-actualitzacions" name="preferencies[]" value="actualitzacions">
+              Actualitzaciones del producto
+            </label>
+
+            <p class="titol">Frecuencia de Actualitzaciones</p>
+            <label type="radio" for="radio-diari"> 
+              <input type="radio" id="radio-diari" name="frequencia" value="diari" checked>
+              Diario
+            </label>
+            <br>
+            <label type="radio" for="radio-setmanal">
+              <input type="radio" id="radio-setmanal" name="frequencia" value="setmanal">
+              Semanal
+            </label>
+            <br>
+            <label type="radio" for="radio-mensual">
+              <input type="radio" id="radio-mensual" name="frequencia" value="mensual">
+              Mensual
+            </label>
+            <p class="titol">Comentarios</p>
+            <label type="textarea" for="comentaris">
+            <textarea id="comentaris" name="comentaris" rows="4" placeholder="Comentari o pregunta..."></textarea>
+            </label>
+            </fieldset>
+        <button class="Enviar" type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+</body>
+</html>

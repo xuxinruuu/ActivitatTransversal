@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8" />
+  <title>index/menu</title>
+  <link rel="stylesheet" href="CSS/barraFooter.css" />
+  <style>
+    .imatges {
+        flex: 1; 
+        height: 310px;
+        width: auto; 
+        border-radius: 12px; 
+        border: 4px solid black;
+    }
+
+    fieldset {
+        border: 0px;
+        padding: 30px;
+        border-radius: 20px;
+        background: linear-gradient(to top, #02264a, #1567b8);
+    }
+
+    body {
+        margin: 0;
+        padding-top: 100px; 
+        font-family: Arial, sans-serif;
+        color: white;
+        background-color: #0d1b2a; 
+    }
+
+    main {
+        padding: 0 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="barra">
+      <img id="logo" src="IMG/barra/image.png" alt="logo" style="width:120px; height:40px;">
+      <div class="botones">
+          <a href="index.html">INICI</a>
+          <a href="Biografia.html">BIOGRAFIA</a>
+          <a href="Galeria.html">GALERIA</a>
+          <a href="Peliculas.html">PEL·LÍCULES</a>
+          <a href="Series.html">SÈRIES</a>
+          <a href="nosaltres.html">SOBRE NOSALTRES</a>
+      </div>
+ 
+      <div class="icones">
+        <a class="usuari" href="Formularis/final/iniciSessio.html">
+          <img class="logo" src="IMG/barra/form.png" width="40px" height="40px">
+        </a>
+      </div>   
+      <div class="icones">
+        <a class="usuari" href="Formularis/final/formcontacte.html">
+          <img class="logo" src="IMG/barra/formulari.png" width="40px" height="40px">
+        </a>
+      </div>   
+    </div>
+  </header>
+
+  <main>
+    <div style="display:flex; gap:20px; align-items:flex-start;">
+        <img class="imatges" src="IMG/Index/Ft1.png" alt="Placeholder">
+        <fieldset style="flex:1;">
+            <h1>Benvingut!</h1>
+            <div>
+                <p>
+                    Benvingut al nostre petit racó dedicat completament al món del cinema i les sèries. 
+                    Aquí no trobaràs crítiques complicades ni paraules massa tècniques: busquem explicar-te 
+                    les coses tal com les diríem a un amic, de manera clara, senzilla i sincera. Som un grup 
+                    de persones que simplement estimem mirar històries, parlar-ne i descobrir-ne de noves. 
+                    Per això hem creat aquest espai: perquè puguis trobar recomanacions ràpides quan no saps 
+                    què veure, opinions detallades si vols aprofundir una mica més i un recull de novetats perquè 
+                    sempre estiguis al dia del que s’estrena. Tant si ets d’aquells que prefereixen les maratons 
+                    de capítols com si ets més de seure tranquil·lament amb una bona pel·lícula, aquí tens un lloc 
+                    pensat per a tu. Explora, descobreix i gaudeix del millor del setè art amb nosaltres.
+                </p>
+            </div>
+        </fieldset>
+    </div>
+    <br>
+    <div style="display:flex; gap:20px; align-items:flex-start;">
+        <fieldset style="flex:1;">
+            <h1>Peliculas!</h1>
+            <div>
+                <p>
+                    En aquest apartat trobaràs ressenyes completes de pel·lícules de tots els gèneres i èpoques. 
+                    Des de estrenes recents que acaben d'arribar a la cartellera fins a clàssics que val la pena
+                    revisitar, volem oferir-te una visió clara del que val la pena veure i del que potser és millor 
+                    deixar per a un altre moment. Les nostres opinions estan escrites amb total sinceritat: parlem del 
+                    que funciona, del que falla, de les escenes que sorprenen i de tot allò que fa que una pel·lícula 
+                    sigui única. També hi trobaràs llistes temàtiques, recomanacions segons el teu estat d'ànim, i petites 
+                    guies per ajudar-te a descobrir joies amagades que potser mai hauries pensat mirar. Si ets un enamorat 
+                    del cinema o simplement vols inspiració per a la nit, aquest és el teu espai.
+                </p>
+            </div>
+        </fieldset>
+        <img class="imatges" src="IMG/Index/peliculas.png" alt="Placeholder">
+    </div>
+    <br>
+    <div style="display:flex; gap:20px; align-items:flex-start;">
+        <img class="imatges" src="IMG/Index/Series.png" alt="Placeholder">
+        <fieldset style="flex:1;">
+            <h1>Series!</h1>
+            <div>
+                <p>
+                    Si ets dels que disfruten enganxant-se a una bona sèrie, aquí tens un apartat dedicat exclusivament a això. 
+                    T'oferim ressenyes de temporades, primeres impressions, valoracions sense spoilers i també opinions més 
+                    completes per si ja has acabat totes les capítols. Parlem de sèries noves, d'aquelles que tothom comenta, i 
+                    també de produccions menys conegudes que mereixen molt més reconeixement. Aquí trobaràs recomanacions segons 
+                    la durada, l'estil o el tipus d'història que vulguis veure, i et mantenim al dia de les novetats més 
+                    interessants. Tant si tens només mitja hora lliure com si busques una història llarga per submergir-t'hi 
+                    durant setmanes, aquesta secció està pensada per ajudar-te a trobar la teva pròxima obsessió seriòfila.
+                </p>
+            </div>
+        </fieldset>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <p id="TFooter">
+        ©2025 Cinema i Sèries. Tots els drets reservats. MEDIA RANKS<br>
+        Creat amb amor, cafè i moltes hores de pel·lis i sèries.<br>
+        Seguiu-nos a les xarxes i recomana'ns què més voleu veure a la web.
+      </p>
+    </div>
+    
+    <div id="iconesFooter">
+        <a href="https://www.instagram.com/"><img class="logoFooter" src="IMG/Footer/instagram.png" width="40px" height="40px"></a>
+        <a href="https://www.facebook.com/"><img class="logoFooter" src="IMG/Footer/facebook.png" width="40px" height="40px"></a>
+        <a href="https://twitter.com/"><img class="logoFooter" src="IMG/Footer/X.png" width="40px" height="40px"></a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+    body {
+            margin: 40px;
+            padding-top: 60px; 
+            font-family: Arial, sans-serif;
+    }
+
+    #logo {
+      margin-right: auto;
+    }
+
+    .barra {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background: linear-gradient(to bottom, #02264a, #1567b8);
+        padding: 20px 12px;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .barra .botones {
+        display:flex;
+        margin-top:11px;
+        letter-spacing:2px;
+        word-spacing:19px;
+    }
+    .barra a {
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        padding: 6px 10px;
+        margin-right: 6px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .barra a:hover {
+        background: #3e6893;
+
+    }
+    
+    footer {
+        padding: 20px; 
+        margin-top: 40px; 
+        border-top: 2px solid #1567b8; 
+        color: rgb(0, 0, 0);
+        padding-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer div#iconesFooter {
+        display: flex;
+        gap: 15px;
+    }
+
+    footer div#TFooter {
+        display: flex;
+        gap: 15px;
+    }
+
+    #TFooter {
+    color: white;
+    }

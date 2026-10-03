@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8" />
+    <title>Creear el compte</title>
+    <link rel="stylesheet" href="/cssFormulari/stylesXX.css" />
+</head>
+<body>
+    <header>
+        <h1>CREEU EL VOSTRE COMPTE</h1>
+    </header>
+
+    <main>
+        <p>Creeu el vostre compte per accedir a una experiència personalitzada.</p>
+        <br>
+        <form action="que_penses_enviat.html" method="post">
+        <fieldset>
+          <legend>Informació de contacte</legend>
+
+<!--Correu-->
+          <label for="correu">Correu electrònic</label><br>
+          <input  id="correu" name="correu" type="email" placeholder="nom@exemple.com" required><br><br>
+
+
+<!--Radio buttons 3 elements-->
+        <label>Gènere</label><br>
+        <label><input type="radio" name="genere" value="masculi">Masculí </label>
+        <label><input type="radio" name="genere" value="femeni">Femení </label>
+        <label><input type="radio" name="genere" value="no indicar">Prefereixo no indicar </label>
+        <br><br>
+
+<!--Nom Cognom-->
+          <label for="nom">Nom</label><br>
+          <input id="nom" name="nom" type="text" placeholder="Escriu el teu nom" required><br><br>
+
+          <label for="nom">Cognom</label><br>
+          <input id="cognom" name="cognom" type="text" placeholder="Escriu el teu cognom" required><br><br>
+
+<!--Entrada de text desplegable 2 elements-->
+          <label for="data">Data de naixement</label>
+          <div class="data">
+            <input id="Any" name="Any" type="text" placeholder="Any">
+            <input name="entrada_desplegable" list="llista-entrades" placeholder="Mes">
+              <datalist id="llista-entrades">
+                <option value="Gener">Gener</option>
+                <option value="Febrer">Febrer</option>
+                <option value="Març">Març</option>
+                <option value="Abril">Abril</option>
+                <option value="Maig">Maig</option>
+                <option value="Juny">Juny</option>
+                <option value="Juliol">Juliol</option>
+                <option value="Agost">Agost</option>
+                <option value="Septembre">Septembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Novembre">Novembre</option>
+                <option value="Desembre">Desembre</option>
+              </datalist>
+            <input id="Dia" name="Dia" type="text" placeholder="Dia">
+          </div>
+          <br>
+
+<!--Entrada numerica-->
+        <label for="telefon">Telèfon</label><br>
+        <input id="telefon" name="telefon" type="tel" placeholder="123 456 789"><br><br>
+
+<!--Text llarg-->
+        <label>Altres comentaris...</label><br>
+        <textarea name="missatge"></textarea>
+        <br><br>
+
+<!--Checkbox 3 elements-->
+
+        <label><input type="checkbox" name="politica" value="politica"> Confirmo que he llegit i comprès la política de privadesa i accepto les condicions d'ús. </label><br>
+        <label><input type="checkbox" name="oferta" value="oferta"> M'agradaria rebre novetats, noves activitats, productes exclusius, serveis a mida i tenir una experiència personalitzada basada en els meus interessos. </label><br>
+        <label><input type="checkbox" name="mayor" value="mayor"> Confirmo que tinc almenys 14 anys </label><br>
+        
+        </fieldset>
+<!--Enviar-->
+        <br>
+        <div class="boto">
+          <button class="Enviar" type="submit">CREAR EL MEU PERFIL</button>
+        </div>
+        </form>
+    </main>
+</body>
+</html>
